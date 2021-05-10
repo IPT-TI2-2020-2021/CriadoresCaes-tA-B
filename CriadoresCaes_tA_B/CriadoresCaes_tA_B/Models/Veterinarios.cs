@@ -43,8 +43,8 @@ namespace CriadoresCaes_tA_B.Models {
       [NotMapped] // este atributo não vai ser adicionado à BD
       [Required]
       [Display(Name ="Honorários")]
-      [RegularExpression("[0..9]+[.,]?[0-9]{0,2}")] // formata a textbox para só aceitar valores decimais
-   //   [RegularExpression("[0..9]+([.,][0-9]{2})?")]  ---> outra alternativa
+      [RegularExpression("[0-9]+[.,]?[0-9]{0,2}")] // formata a textbox para só aceitar valores decimais
+   //   [RegularExpression("[0-9]+([.,][0-9]{2})?")]  ---> outra alternativa
       public string HonorarioAux { get; set; }
 
       //**********************************************************
